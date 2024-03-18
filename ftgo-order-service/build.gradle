@@ -96,9 +96,9 @@ protobuf {
         }
     }
 
-    // Define the place for generating stub  
+    // Define the place for generating stub
     // generateProtoTasks.generatedFilesBaseDir = "${rootDir}/grpc"
-    
+
     generateProtoTasks {
         all()*.plugins {
             grpc {
@@ -125,7 +125,7 @@ dependencies {
     compile project(":ftgo-common-jpa")
 
     compile "io.eventuate.tram.core:eventuate-tram-aggregate-domain-events:$eventuateTramVersion"
-    compile "io.eventuate.tram.core:eventuate-tram-jdbc-kafka:$eventuateTramVersion"
+    compile "io.eventuate.tram.core:eventuate-tram-jdbc-kafka:$eventuateTramJdbcKafkaVersion"
     compile "io.eventuate.tram.core:eventuate-tram-commands:$eventuateTramVersion"
 
     compile "io.eventuate.tram.sagas:eventuate-tram-sagas-simple-dsl:$eventuateTramSagasVersion"
